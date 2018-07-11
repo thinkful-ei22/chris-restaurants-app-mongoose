@@ -1,3 +1,11 @@
 language: node_js
 node_js: node
 services: mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: USpY7GwkaDq4001gT4sWQ67IG0hB3BQgekP73GCXF1oel2uuvnNsYCZVnw1SeQFiVyhFSffByQgxnegzx7LQD/jT16+7ltmIvtqZISeXTV6ItwMbPegGoWI+cL1LcGViA4hUROHCuEXwCBaYj4mlzBIgWkmjXQsaHT8uUQzFS9SJml0EZW5dV0Grhyh1s9rklCKArLi4gtpHBCUwmcZWmufNiauo00P/EY/d+kqefD4lE2VlLrz9bpZZHvebMOuZmtwYaqJMNVaIasQ4QQC8ZKjjfatZpt9L8mL8KEYG7xTkdlcIgJxWHWt+NFp1cAXjsbhRTfosuy5E6eek8PyvgCc+8V854RAHQPaeZUmzasDS9WNb9hkZp6CkXQMojAAO1kqE6Mv2VOidDinHYX6M4KfcsQguJvUdqEZZeUzdq74jBoR2CAqbkwPpPwHBH0ox56rxZBrwgVRwYfHfSJgMql9wucpsLRk0n55HuhB7uTkKVp9SDmfiwRecCqA3ZKhg76lKz3wwgejYyeaYJcieXmFuIH91dfVndQdsa8zMz4B+LMhpZ+xxRCLhEMB8UXQqbh0gyF0dRFJlRZQ7VAxZ35i9Hba8dWK6woPNW8TU5TklW65/BWDwy6F1LhPKTakVhNK9zhnCvZkmgv4enAJd/ftgDVgoknOhNkP7s/NJvRU=
+  app: shrouded-falls-75560
+  on:
+    repo: thinkful-ei22/chris-restaurants-app-mongoose
+    branch: feature/with-tests
